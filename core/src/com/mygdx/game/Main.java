@@ -9,7 +9,7 @@ public class Main extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 
-	//comentario1
+	//comentario2
 	
 	@Override
 	public void create () {
