@@ -7,7 +7,7 @@ Indice:
 1. Introducción.
 2. Controles, gráficos y música.
 3. Informacion complementaria.
-4. Hola owo
+
 
 ___
 
