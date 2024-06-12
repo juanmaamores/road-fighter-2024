@@ -25,13 +25,13 @@ public class Juego implements Screen {
         int screenHeightCenter = screenHeight/2;
 
         //obtener texturas del disco
-        texturaJugador = new Texture(Gdx.files.internal("assets/jugadorNorte.png"));
-        texturaPista = new Texture(Gdx.files.internal("assets/pista.png"));
+        texturaJugador = new Texture(Gdx.files.internal("assets/jugadorNorteTest.png"));
+        texturaPista = new Texture(Gdx.files.internal("assets/pistatest.png"));
 
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 500, 500);
 
-        jugador = new Jugador(texturaJugador, screenWidthCenter - (texturaJugador.getWidth()/2),0);
+        jugador = new Jugador(texturaJugador, screenWidthCenter - (texturaJugador.getWidth()/2),20);
         pista = new Pista(texturaPista, screenWidthCenter - (texturaPista.getWidth()/2) ,0);
 
     }
@@ -59,13 +59,13 @@ public class Juego implements Screen {
 
     private void controles() {
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
-            jugador.setRectanguloX(-1);// Mover jugador hacia la izquierda
+            jugador.setRectanguloX(-4);// Mover jugador hacia la izquierda
         }
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
-            jugador.setRectanguloX(1);// Mover jugador hacia la derecha
+            jugador.setRectanguloX(4);// Mover jugador hacia la derecha
         }
         if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
-            pista.setRectanguloY(-1);// Mover pista hacia abajo
+            pista.setRectanguloY(-4);// Mover pista hacia abajo
         }
     }
 

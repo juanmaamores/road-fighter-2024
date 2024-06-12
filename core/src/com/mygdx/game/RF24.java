@@ -19,7 +19,6 @@ public class RF24 extends Game {
 		batch = new SpriteBatch();
 		font1 = new BitmapFont(); // Usa la tipografia por defecto de libgdx
 		this.setScreen(new MenuPrincipal(this));
-
 	}
 
 	@Override
